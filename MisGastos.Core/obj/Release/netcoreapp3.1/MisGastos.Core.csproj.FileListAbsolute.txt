@@ -1,0 +1,9 @@
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\bin\Release\netcoreapp3.1\MisGastos.Core.deps.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\bin\Release\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\bin\Release\netcoreapp3.1\MisGastos.Core.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\obj\Release\netcoreapp3.1\MisGastos.Core.csprojAssemblyReference.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\obj\Release\netcoreapp3.1\MisGastos.Core.AssemblyInfoInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\obj\Release\netcoreapp3.1\MisGastos.Core.AssemblyInfo.cs
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\obj\Release\netcoreapp3.1\MisGastos.Core.csproj.CoreCompileInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\obj\Release\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Core\obj\Release\netcoreapp3.1\MisGastos.Core.pdb

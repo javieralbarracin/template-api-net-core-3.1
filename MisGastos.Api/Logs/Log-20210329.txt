@@ -1,0 +1,774 @@
+2021-03-29 09:31:16.598 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-29 09:31:27.378 -03:00 [ERR] Failed executing DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Activo], [g].[CreadoFecha], [g].[CreadoPor], [g].[Descripcion], [g].[Discriminator], [g].[Eliminado], [g].[EliminadoFecha], [g].[EliminadoPor], [g].[FechaVencimiento], [g].[IdFrecuencia], [g].[IdGastoTipo], [g].[GastoType], [g].[Importe], [g].[IdMes], [g].[ModificadoFecha], [g].[ModificadoPor], [g].[CantidadTotalCuotas], [g].[FechaInicio], [g].[GastoId], [f].[Id], [f].[Descripcion], [f].[Valor], [g0].[Id], [g0].[Descripcion], [m].[Id], [m].[Descripcion], [t].[Id], [t].[Activo], [t].[CreadoFecha], [t].[CreadoPor], [t].[Descripcion], [t].[Discriminator], [t].[Eliminado], [t].[EliminadoFecha], [t].[EliminadoPor], [t].[FechaVencimiento], [t].[IdFrecuencia], [t].[IdGastoTipo], [t].[GastoType], [t].[Importe], [t].[IdMes], [t].[ModificadoFecha], [t].[ModificadoPor], [t].[CantidadTotalCuotas], [t].[FechaInicio], [t].[GastoId]
+FROM [Gasto] AS [g]
+INNER JOIN [Frecuencia] AS [f] ON [g].[IdFrecuencia] = [f].[Id]
+INNER JOIN [GastoTipo] AS [g0] ON [g].[IdGastoTipo] = [g0].[Id]
+INNER JOIN [Mes] AS [m] ON [g].[IdMes] = [m].[Id]
+LEFT JOIN (
+    SELECT [g1].[Id], [g1].[Activo], [g1].[CreadoFecha], [g1].[CreadoPor], [g1].[Descripcion], [g1].[Discriminator], [g1].[Eliminado], [g1].[EliminadoFecha], [g1].[EliminadoPor], [g1].[FechaVencimiento], [g1].[IdFrecuencia], [g1].[IdGastoTipo], [g1].[GastoType], [g1].[Importe], [g1].[IdMes], [g1].[ModificadoFecha], [g1].[ModificadoPor], [g1].[CantidadTotalCuotas], [g1].[FechaInicio], [g1].[GastoId]
+    FROM [Gasto] AS [g1]
+    WHERE ([g1].[Discriminator] = N'GastoCredito') AND ([g1].[Eliminado] <> CAST(1 AS bit))
+) AS [t] ON [g].[Id] = [t].[GastoId]
+WHERE ([g].[Discriminator] IN (N'Gasto', N'GastoCredito', N'GastoFijo') AND ([g].[Eliminado] <> CAST(1 AS bit))) AND ([g].[Activo] = CAST(1 AS bit))
+ORDER BY [g].[Id], [f].[Id], [g0].[Id], [m].[Id], [t].[Id]
+2021-03-29 09:31:27.473 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MisGastos.Infrastructure.Context.MisGastosContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0d801ac2-cdec-4149-818a-fa6961804fa7
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:0d801ac2-cdec-4149-818a-fa6961804fa7
+Error Number:207,State:1,Class:16
+2021-03-29 09:31:27.784 -03:00 [ERR] [500]: El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MisGastos.Infrastructure.Repositories.GastoRepository.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\GastoRepository.cs:line 34
+   at MisGastos.Core.Services.GastoService.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\GastoService.cs:line 138
+   at MisGastos.Api.Controllers.V1.GastosController.ListCredits() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\V1\GastosController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+ClientConnectionId:0d801ac2-cdec-4149-818a-fa6961804fa7
+Error Number:207,State:1,Class:16
+2021-03-29 09:35:50.643 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-29 09:35:54.386 -03:00 [ERR] Failed executing DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Activo], [g].[CreadoFecha], [g].[CreadoPor], [g].[Descripcion], [g].[Discriminator], [g].[Eliminado], [g].[EliminadoFecha], [g].[EliminadoPor], [g].[FechaVencimiento], [g].[IdFrecuencia], [g].[IdGastoTipo], [g].[GastoType], [g].[Importe], [g].[IdMes], [g].[ModificadoFecha], [g].[ModificadoPor], [g].[CantidadTotalCuotas], [g].[FechaInicio], [g].[GastoId], [f].[Id], [f].[Descripcion], [f].[Valor], [g0].[Id], [g0].[Descripcion], [m].[Id], [m].[Descripcion], [t].[Id], [t].[Activo], [t].[CreadoFecha], [t].[CreadoPor], [t].[Descripcion], [t].[Discriminator], [t].[Eliminado], [t].[EliminadoFecha], [t].[EliminadoPor], [t].[FechaVencimiento], [t].[IdFrecuencia], [t].[IdGastoTipo], [t].[GastoType], [t].[Importe], [t].[IdMes], [t].[ModificadoFecha], [t].[ModificadoPor], [t].[CantidadTotalCuotas], [t].[FechaInicio], [t].[GastoId]
+FROM [Gasto] AS [g]
+INNER JOIN [Frecuencia] AS [f] ON [g].[IdFrecuencia] = [f].[Id]
+INNER JOIN [GastoTipo] AS [g0] ON [g].[IdGastoTipo] = [g0].[Id]
+INNER JOIN [Mes] AS [m] ON [g].[IdMes] = [m].[Id]
+LEFT JOIN (
+    SELECT [g1].[Id], [g1].[Activo], [g1].[CreadoFecha], [g1].[CreadoPor], [g1].[Descripcion], [g1].[Discriminator], [g1].[Eliminado], [g1].[EliminadoFecha], [g1].[EliminadoPor], [g1].[FechaVencimiento], [g1].[IdFrecuencia], [g1].[IdGastoTipo], [g1].[GastoType], [g1].[Importe], [g1].[IdMes], [g1].[ModificadoFecha], [g1].[ModificadoPor], [g1].[CantidadTotalCuotas], [g1].[FechaInicio], [g1].[GastoId]
+    FROM [Gasto] AS [g1]
+    WHERE ([g1].[Discriminator] = N'GastoCredito') AND ([g1].[Eliminado] <> CAST(1 AS bit))
+) AS [t] ON [g].[Id] = [t].[GastoId]
+WHERE ([g].[Discriminator] IN (N'Gasto', N'GastoCredito', N'GastoFijo') AND ([g].[Eliminado] <> CAST(1 AS bit))) AND ([g].[Activo] = CAST(1 AS bit))
+ORDER BY [g].[Id], [f].[Id], [g0].[Id], [m].[Id], [t].[Id]
+2021-03-29 09:35:54.505 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MisGastos.Infrastructure.Context.MisGastosContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:42e90fdc-eefa-4022-ad41-0c2e180a13db
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:42e90fdc-eefa-4022-ad41-0c2e180a13db
+Error Number:207,State:1,Class:16
+2021-03-29 09:35:55.005 -03:00 [ERR] [500]: El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoType' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'GastoId' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MisGastos.Infrastructure.Repositories.GastoRepository.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\GastoRepository.cs:line 34
+   at MisGastos.Core.Services.GastoService.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\GastoService.cs:line 138
+   at MisGastos.Api.Controllers.V1.GastosController.ListCredits() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\V1\GastosController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+ClientConnectionId:42e90fdc-eefa-4022-ad41-0c2e180a13db
+Error Number:207,State:1,Class:16
+2021-03-29 10:02:38.974 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-29 10:02:40.722 -03:00 [ERR] Failed executing DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Activo], [g].[CreadoFecha], [g].[CreadoPor], [g].[Descripcion], [g].[Discriminator], [g].[Eliminado], [g].[EliminadoFecha], [g].[EliminadoPor], [g].[IdFrecuencia], [g].[IdGastoTipo], [g].[ImporteTotal], [g].[IdMes], [g].[ModificadoFecha], [g].[ModificadoPor], [g].[CantidadTotalCuotas], [g].[FechaInicio], [g].[FechaVencimiento], [g].[GastoId], [g].[Importe], [f].[Id], [f].[Descripcion], [f].[Valor], [g0].[Id], [g0].[Descripcion], [m].[Id], [m].[Descripcion], [t].[Id], [t].[Activo], [t].[CreadoFecha], [t].[CreadoPor], [t].[Descripcion], [t].[Discriminator], [t].[Eliminado], [t].[EliminadoFecha], [t].[EliminadoPor], [t].[IdFrecuencia], [t].[IdGastoTipo], [t].[ImporteTotal], [t].[IdMes], [t].[ModificadoFecha], [t].[ModificadoPor], [t].[CantidadTotalCuotas], [t].[FechaInicio], [t].[FechaVencimiento], [t].[GastoId], [t].[Importe]
+FROM [Gasto] AS [g]
+INNER JOIN [Frecuencia] AS [f] ON [g].[IdFrecuencia] = [f].[Id]
+INNER JOIN [GastoTipo] AS [g0] ON [g].[IdGastoTipo] = [g0].[Id]
+INNER JOIN [Mes] AS [m] ON [g].[IdMes] = [m].[Id]
+LEFT JOIN (
+    SELECT [g1].[Id], [g1].[Activo], [g1].[CreadoFecha], [g1].[CreadoPor], [g1].[Descripcion], [g1].[Discriminator], [g1].[Eliminado], [g1].[EliminadoFecha], [g1].[EliminadoPor], [g1].[IdFrecuencia], [g1].[IdGastoTipo], [g1].[ImporteTotal], [g1].[IdMes], [g1].[ModificadoFecha], [g1].[ModificadoPor], [g1].[CantidadTotalCuotas], [g1].[FechaInicio], [g1].[FechaVencimiento], [g1].[GastoId], [g1].[Importe]
+    FROM [Gasto] AS [g1]
+    WHERE ([g1].[Discriminator] = N'GastoCredito') AND ([g1].[Eliminado] <> CAST(1 AS bit))
+) AS [t] ON [g].[Id] = [t].[GastoId]
+WHERE ([g].[Discriminator] IN (N'Gasto', N'GastoCredito', N'GastoFijo') AND ([g].[Eliminado] <> CAST(1 AS bit))) AND ([g].[Activo] = CAST(1 AS bit))
+ORDER BY [g].[Id], [f].[Id], [g0].[Id], [m].[Id], [t].[Id]
+2021-03-29 10:02:40.776 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MisGastos.Infrastructure.Context.MisGastosContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ebfc5924-7e61-4ec5-9bfa-4f23515e5283
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ebfc5924-7e61-4ec5-9bfa-4f23515e5283
+Error Number:207,State:1,Class:16
+2021-03-29 10:02:41.003 -03:00 [ERR] [500]: El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'CantidadTotalCuotas' no es válido.
+El nombre de columna 'FechaInicio' no es válido.
+El nombre de columna 'FechaVencimiento' no es válido.
+El nombre de columna 'GastoId' no es válido.
+El nombre de columna 'Importe' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MisGastos.Infrastructure.Repositories.GastoRepository.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\GastoRepository.cs:line 34
+   at MisGastos.Core.Services.GastoService.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\GastoService.cs:line 108
+   at MisGastos.Api.Controllers.V1.GastosController.ListCredits() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\V1\GastosController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+ClientConnectionId:ebfc5924-7e61-4ec5-9bfa-4f23515e5283
+Error Number:207,State:1,Class:16
+2021-03-29 14:29:25.709 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-29 14:29:36.932 -03:00 [ERR] Failed executing DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Activo], [g].[CreadoFecha], [g].[CreadoPor], [g].[Descripcion], [g].[Discriminator], [g].[Eliminado], [g].[EliminadoFecha], [g].[EliminadoPor], [g].[IdFrecuencia], [g].[IdGastoTipo], [g].[ImporteTotal], [g].[IdMes], [g].[ModificadoFecha], [g].[ModificadoPor], [f].[Id], [f].[Descripcion], [f].[Valor], [g0].[Id], [g0].[Descripcion], [m].[Id], [m].[Descripcion], [g1].[Id], [g1].[CantidadTotalCuotas], [g1].[FechaInicio], [g1].[FechaVencimiento], [g1].[IdGasto], [g1].[Importe]
+FROM [Gasto] AS [g]
+INNER JOIN [Frecuencia] AS [f] ON [g].[IdFrecuencia] = [f].[Id]
+INNER JOIN [GastoTipo] AS [g0] ON [g].[IdGastoTipo] = [g0].[Id]
+INNER JOIN [Mes] AS [m] ON [g].[IdMes] = [m].[Id]
+LEFT JOIN [GastoCredito] AS [g1] ON [g].[Id] = [g1].[IdGasto]
+WHERE ([g].[Discriminator] IN (N'Gasto', N'GastoFijo') AND ([g].[Eliminado] <> CAST(1 AS bit))) AND ([g].[Activo] = CAST(1 AS bit))
+ORDER BY [g].[Id], [f].[Id], [g0].[Id], [m].[Id], [g1].[Id]
+2021-03-29 14:29:37.043 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MisGastos.Infrastructure.Context.MisGastosContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b80724fa-600c-4624-867f-d4a5d73d2ddf
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b80724fa-600c-4624-867f-d4a5d73d2ddf
+Error Number:207,State:1,Class:16
+2021-03-29 14:29:37.618 -03:00 [ERR] [500]: El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MisGastos.Infrastructure.Repositories.GastoRepository.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\GastoRepository.cs:line 34
+   at MisGastos.Core.Services.GastoService.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\GastoService.cs:line 108
+   at MisGastos.Api.Controllers.V1.GastosController.ListCredits() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\V1\GastosController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+ClientConnectionId:b80724fa-600c-4624-867f-d4a5d73d2ddf
+Error Number:207,State:1,Class:16
+2021-03-29 14:34:07.747 -03:00 [ERR] Failed executing DbCommand (1,630ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Activo], [g].[CreadoFecha], [g].[CreadoPor], [g].[Descripcion], [g].[Discriminator], [g].[Eliminado], [g].[EliminadoFecha], [g].[EliminadoPor], [g].[IdFrecuencia], [g].[IdGastoTipo], [g].[ImporteTotal], [g].[IdMes], [g].[ModificadoFecha], [g].[ModificadoPor], [f].[Id], [f].[Descripcion], [f].[Valor], [g0].[Id], [g0].[Descripcion], [m].[Id], [m].[Descripcion], [g1].[Id], [g1].[CantidadTotalCuotas], [g1].[FechaInicio], [g1].[FechaVencimiento], [g1].[IdGasto], [g1].[Importe]
+FROM [Gasto] AS [g]
+INNER JOIN [Frecuencia] AS [f] ON [g].[IdFrecuencia] = [f].[Id]
+INNER JOIN [GastoTipo] AS [g0] ON [g].[IdGastoTipo] = [g0].[Id]
+INNER JOIN [Mes] AS [m] ON [g].[IdMes] = [m].[Id]
+LEFT JOIN [GastoCredito] AS [g1] ON [g].[Id] = [g1].[IdGasto]
+WHERE ([g].[Discriminator] IN (N'Gasto', N'GastoFijo') AND ([g].[Eliminado] <> CAST(1 AS bit))) AND ([g].[Activo] = CAST(1 AS bit))
+ORDER BY [g].[Id], [f].[Id], [g0].[Id], [m].[Id], [g1].[Id]
+2021-03-29 14:34:07.753 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MisGastos.Infrastructure.Context.MisGastosContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b80724fa-600c-4624-867f-d4a5d73d2ddf
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b80724fa-600c-4624-867f-d4a5d73d2ddf
+Error Number:207,State:1,Class:16
+2021-03-29 14:34:08.029 -03:00 [ERR] [500]: El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MisGastos.Infrastructure.Repositories.GastoRepository.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\GastoRepository.cs:line 34
+   at MisGastos.Core.Services.GastoService.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\GastoService.cs:line 108
+   at MisGastos.Api.Controllers.V1.GastosController.ListCredits() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\V1\GastosController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+ClientConnectionId:b80724fa-600c-4624-867f-d4a5d73d2ddf
+Error Number:207,State:1,Class:16
+2021-03-29 14:52:24.574 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-29 14:52:32.853 -03:00 [ERR] Failed executing DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Activo], [g].[CreadoFecha], [g].[CreadoPor], [g].[Descripcion], [g].[Discriminator], [g].[Eliminado], [g].[EliminadoFecha], [g].[EliminadoPor], [g].[IdFrecuencia], [g].[IdGastoTipo], [g].[ImporteTotal], [g].[IdMes], [g].[ModificadoFecha], [g].[ModificadoPor], [f].[Id], [f].[Descripcion], [f].[Valor], [g0].[Id], [g0].[Descripcion], [m].[Id], [m].[Descripcion], [g1].[Id], [g1].[CantidadTotalCuotas], [g1].[FechaInicio], [g1].[FechaVencimiento], [g1].[IdGasto], [g1].[Importe]
+FROM [Gasto] AS [g]
+INNER JOIN [Frecuencia] AS [f] ON [g].[IdFrecuencia] = [f].[Id]
+INNER JOIN [GastoTipo] AS [g0] ON [g].[IdGastoTipo] = [g0].[Id]
+INNER JOIN [Mes] AS [m] ON [g].[IdMes] = [m].[Id]
+LEFT JOIN [GastoCredito] AS [g1] ON [g].[Id] = [g1].[IdGasto]
+WHERE ([g].[Discriminator] IN (N'Gasto', N'GastoFijo') AND ([g].[Eliminado] <> CAST(1 AS bit))) AND ([g].[Activo] = CAST(1 AS bit))
+ORDER BY [g].[Id], [f].[Id], [g0].[Id], [m].[Id], [g1].[Id]
+2021-03-29 14:52:32.924 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MisGastos.Infrastructure.Context.MisGastosContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9c2b91b6-5c77-4100-891f-a6316087657a
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9c2b91b6-5c77-4100-891f-a6316087657a
+Error Number:207,State:1,Class:16
+2021-03-29 14:52:33.205 -03:00 [ERR] [500]: El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MisGastos.Infrastructure.Repositories.GastoRepository.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\GastoRepository.cs:line 34
+   at MisGastos.Core.Services.GastoService.GastosCreditosAllAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\GastoService.cs:line 108
+   at MisGastos.Api.Controllers.V1.GastosController.ListCredits() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\V1\GastosController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+ClientConnectionId:9c2b91b6-5c77-4100-891f-a6316087657a
+Error Number:207,State:1,Class:16
+2021-03-29 14:56:53.646 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-29 14:56:56.924 -03:00 [ERR] Failed executing DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Activo], [g].[CreadoFecha], [g].[CreadoPor], [g].[Descripcion], [g].[Discriminator], [g].[Eliminado], [g].[EliminadoFecha], [g].[EliminadoPor], [g].[IdFrecuencia], [g].[IdGastoTipo], [g].[ImporteTotal], [g].[IdMes], [g].[ModificadoFecha], [g].[ModificadoPor], [f].[Id], [f].[Descripcion], [f].[Valor], [g0].[Id], [g0].[Descripcion], [m].[Id], [m].[Descripcion]
+FROM [Gasto] AS [g]
+INNER JOIN [Frecuencia] AS [f] ON [g].[IdFrecuencia] = [f].[Id]
+INNER JOIN [GastoTipo] AS [g0] ON [g].[IdGastoTipo] = [g0].[Id]
+INNER JOIN [Mes] AS [m] ON [g].[IdMes] = [m].[Id]
+WHERE ([g].[Discriminator] IN (N'Gasto', N'GastoFijo') AND ([g].[Eliminado] <> CAST(1 AS bit))) AND ([g].[Activo] = CAST(1 AS bit))
+2021-03-29 14:56:57.021 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MisGastos.Infrastructure.Context.MisGastosContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:5d623b8e-69e0-4713-800f-9b0c1c58adf5
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:5d623b8e-69e0-4713-800f-9b0c1c58adf5
+Error Number:207,State:1,Class:16
+2021-03-29 14:56:57.372 -03:00 [ERR] [500]: El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+Microsoft.Data.SqlClient.SqlException (0x80131904): El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+El nombre de columna 'Discriminator' no es válido.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MisGastos.Infrastructure.Repositories.GastoRepository.GastosRelashionShipAsync() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\GastoRepository.cs:line 22
+   at MisGastos.Core.Services.GastoService.GetGastosAsync(GastoQueryFilter filters) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\GastoService.cs:line 51
+   at MisGastos.Api.Controllers.V1.GastosController.ListWithFilter(GastoQueryFilter filters) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\V1\GastosController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+ClientConnectionId:5d623b8e-69e0-4713-800f-9b0c1c58adf5
+Error Number:207,State:1,Class:16
+2021-03-29 15:04:17.986 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-29 15:09:23.046 -03:00 [WRN] Failed to determine the https port for redirect.

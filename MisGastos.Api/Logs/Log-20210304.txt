@@ -1,0 +1,1 @@
+2021-03-04 18:24:10.904 -03:00 [WRN] Failed to determine the https port for redirect.

@@ -1,0 +1,11 @@
+2021-02-20 11:01:52.346 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-02-20 11:01:53.241 -03:00 [WRN] No type was specified for the decimal column 'Importe' on entity type 'Gasto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-02-20 11:22:16.636 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-02-20 11:22:19.095 -03:00 [WRN] No type was specified for the decimal column 'Importe' on entity type 'Gasto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-02-20 11:24:40.130 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-02-20 11:24:42.070 -03:00 [WRN] No type was specified for the decimal column 'Importe' on entity type 'Gasto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-02-20 11:37:59.573 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-02-20 11:38:01.569 -03:00 [WRN] No type was specified for the decimal column 'Importe' on entity type 'Gasto'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-02-20 11:39:37.192 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-02-20 15:29:42.533 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-02-20 15:33:03.433 -03:00 [WRN] Failed to determine the https port for redirect.

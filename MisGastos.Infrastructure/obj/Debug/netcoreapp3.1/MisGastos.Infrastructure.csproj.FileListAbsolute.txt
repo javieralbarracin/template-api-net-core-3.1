@@ -1,0 +1,36 @@
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.deps.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csprojAssemblyReference.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.AssemblyInfoInputs.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.AssemblyInfo.cs
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Core.pdb
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csproj.CopyComplete
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csproj.CoreCompileInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.deps.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Core.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csprojAssemblyReference.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.AssemblyInfoInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.AssemblyInfo.cs
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csproj.CoreCompileInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csproj.CopyComplete
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.deps.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\bin\Debug\netcoreapp3.1\MisGastos.Core.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csprojAssemblyReference.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.AssemblyInfoInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.AssemblyInfo.cs
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csproj.CoreCompileInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.csproj.CopyComplete
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\obj\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb

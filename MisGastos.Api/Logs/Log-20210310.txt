@@ -1,0 +1,25 @@
+2021-03-10 18:28:55.568 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-03-10 18:28:56.248 -03:00 [ERR] [500]: No database provider has been configured for this DbContext. A provider can be configured by overriding the DbContext.OnConfiguring method or by using AddDbContext on the application service provider. If AddDbContext is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.
+System.InvalidOperationException: No database provider has been configured for this DbContext. A provider can be configured by overriding the DbContext.OnConfiguring method or by using AddDbContext on the application service provider. If AddDbContext is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, IDbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at MisGastos.Infrastructure.Repositories.BaseRepository`1..ctor(MisGastosContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\BaseRepository.cs:line 19
+   at MisGastos.Infrastructure.Repositories.SecurityRepository..ctor(MisGastosContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\SecurityRepository.cs:line 14
+   at MisGastos.Infrastructure.Repositories.UnitOfWork.get_SecurityRepository() in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Infrastructure\Repositories\UnitOfWork.cs:line 30
+   at MisGastos.Core.Services.SecurityService.GetLoginByCredentials(UserLogin userLogin) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Core\Services\SecurityService.cs:line 21
+   at MisGastos.Api.Controllers.TokenController.IsValidUser(UserLogin login) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\TokenController.cs:line 49
+   at MisGastos.Api.Controllers.TokenController.Authentication(UserLogin login) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Controllers\TokenController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MisGastos.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\Middleware\ErrorHandlerMiddleware.cs:line 29
+2021-03-10 18:32:47.884 -03:00 [WRN] Failed to determine the https port for redirect.

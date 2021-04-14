@@ -1,0 +1,268 @@
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.exe
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csprojAssemblyReference.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.AssemblyInfoInputs.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.AssemblyInfo.cs
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.RazorTargetAssemblyInfo.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\staticwebassets\MisGastos.Api.StaticWebAssets.Manifest.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\staticwebassets\MisGastos.Api.StaticWebAssets.xml
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Core.pdb
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csproj.CopyComplete
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.deps.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.runtimeconfig.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.runtimeconfig.dev.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.pdb
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.dll
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.pdb
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.genruntimeconfig.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\web.config
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csproj.CoreCompileInputs.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.Production.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.QA.json
+D:\DEVELOP\PROYECTOS .NET CORE LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.Test.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\web.config
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.Production.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.QA.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.Test.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.exe
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.deps.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.runtimeconfig.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.runtimeconfig.dev.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Core.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csprojAssemblyReference.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.AssemblyInfoInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.AssemblyInfo.cs
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csproj.CoreCompileInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.RazorTargetAssemblyInfo.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csproj.CopyComplete
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\staticwebassets\MisGastos.Api.StaticWebAssets.Manifest.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\staticwebassets\MisGastos.Api.StaticWebAssets.xml
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.genruntimeconfig.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\web.config
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.QA.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.Test.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.exe
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.deps.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.runtimeconfig.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.runtimeconfig.dev.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Api.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Core.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Core.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\MisGastos.Infrastructure.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csprojAssemblyReference.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.AssemblyInfoInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.AssemblyInfo.cs
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csproj.CoreCompileInputs.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.RazorTargetAssemblyInfo.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.csproj.CopyComplete
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\staticwebassets\MisGastos.Api.StaticWebAssets.Manifest.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\staticwebassets\MisGastos.Api.StaticWebAssets.xml
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.pdb
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\MisGastos.Api.genruntimeconfig.cache
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\MisGastos.Api.styles.css
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.dev.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\appsettings.prod.json
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.MSSqlServer.dll
+D:\DEVELOP\PROYECTOS.LABS\MisGastos.Api\MisGastos.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.PeriodicBatching.dll
